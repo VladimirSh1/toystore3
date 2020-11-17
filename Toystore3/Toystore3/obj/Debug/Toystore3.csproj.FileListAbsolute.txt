@@ -80,4 +80,3 @@ D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.csproj.CoreCompil
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.csproj.CopyComplete
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.dll
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.pdb
-D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.csprojAssemblyReference.cache

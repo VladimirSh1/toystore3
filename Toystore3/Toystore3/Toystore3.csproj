@@ -128,6 +128,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ToysController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -189,6 +190,11 @@
     <Content Include="Views\Home\FilterIndex.cshtml" />
     <Content Include="Views\Home\ReturnFLink.cshtml" />
     <Content Include="Views\Home\FirstToy.cshtml" />
+    <Content Include="Views\Toys\Create.cshtml" />
+    <Content Include="Views\Toys\Delete.cshtml" />
+    <Content Include="Views\Toys\Details.cshtml" />
+    <Content Include="Views\Toys\Edit.cshtml" />
+    <Content Include="Views\Toys\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

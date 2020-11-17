@@ -12,12 +12,14 @@ namespace Toystore3.Models
         [HiddenInput(DisplayValue =false)]
         public int Id { set; get; }
 
-        [Required]
+        [Required(ErrorMessage ="Наименование товара должно быть заполнено")]
         [Display(Name="Наименование")]
         public string Name { set; get; }
 
-        [Required]
+        [Required(ErrorMessage ="Цена товара должна быть указана")]
         [Display(Name="Цена")]
+        [Range(1, 999999, ErrorMessage ="Цена больше 999999")]
+        [RegularExpression(@"^(?:[1-9]\d*|0)?$", ErrorMessage ="Допустимо только неотрицательное число")]
         public int Price { set; get; }
 
         [Display(Name="Id сотрудника")]
