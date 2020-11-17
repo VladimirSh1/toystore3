@@ -1,3 +1,4 @@
+D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\Antlr3.Runtime.pdb
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\Toystore3.dll.config
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\Toystore3.dll
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\Toystore3.pdb
@@ -74,10 +75,9 @@ D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\System.Web.WebPages.xml
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\System.Web.WebPages.Deployment.xml
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\System.Web.WebPages.Razor.xml
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\Newtonsoft.Json.xml
-D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\Antlr3.Runtime.pdb
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.csprojAssemblyReference.cache
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.csproj.CoreCompileInputs.cache
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.csproj.CopyComplete
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.dll
 D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.pdb
+D:\CSharpLab\Toystore3\Toystore3\Toystore3\obj\Debug\Toystore3.csprojAssemblyReference.cache

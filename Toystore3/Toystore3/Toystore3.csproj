@@ -131,8 +131,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\PageViewHelper.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\PageInfo.cs" />
+    <Compile Include="Models\PageViewToys.cs" />
     <Compile Include="Models\Toy.cs" />
+    <Compile Include="Models\ToysFilterList.cs" />
     <Compile Include="Models\ToystoreContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -179,6 +183,12 @@
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Home\Edit.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Home\PageIndex.cshtml" />
+    <Content Include="Views\Home\ReturnLink.cshtml" />
+    <Content Include="Views\Home\ReturnPLink.cshtml" />
+    <Content Include="Views\Home\FilterIndex.cshtml" />
+    <Content Include="Views\Home\ReturnFLink.cshtml" />
+    <Content Include="Views\Home\FirstToy.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

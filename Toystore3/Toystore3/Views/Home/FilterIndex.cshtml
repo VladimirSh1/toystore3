@@ -1,0 +1,43 @@
+﻿@using Toystore3.Models
+@model Toystore3.Models.ToysFilterList
+
+@{
+    ViewBag.Title = "Список с фильтрацией";
+}
+
+<h2>Список с фильтрацией</h2>
+
+<form method="get">
+    <div style="padding: 1em; font-size:1.2em;">
+        <label class="control-label">Сотрудник: </label>
+        @Html.DropDownList("empId", Model.Employees as SelectList)
+        <input type="submit" value="Применить" />
+    </div>
+</form>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>Наименование</th>
+            <th>Цена</th>
+            <th>Сотрудник</th>
+            <th>Редактировать, удалить</th>
+        </tr>
+        @foreach (Toy toy in Model.Toys)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => toy.Name)</td>
+                <td>@Html.DisplayFor(modelItem => toy.Price)</td>
+                <td>
+                    @Html.DisplayFor(modelItem => toy.Employee.Name)
+                    @Html.DisplayFor(modelItem => toy.Employee.Patronymic)
+                    @Html.DisplayFor(modelItem => toy.Employee.Surname)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = toy.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = toy.Id })
+                </td>
+            </tr>
+        }
+    </table>
+</div>

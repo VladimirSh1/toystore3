@@ -1,0 +1,41 @@
+﻿@using Toystore3.Models
+@using Toystore3.Helpers
+@model PageViewToys
+
+@{
+    ViewBag.Title = "Список игрушек";
+}
+
+    <h2>Постраничный вывод списка игрушек</h2>
+<div style="height: 250px;">
+    <table class="table">
+        <tr>
+            <th>Наименование</th>
+            <th>Цена</th>
+            <th>Сотрудник</th>
+        </tr>
+            @foreach (Toy toy in Model.Toys)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => toy.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => toy.Price)</td>
+                    <td>
+                        @Html.DisplayFor(modelItem => toy.Employee.Name)
+                        @Html.DisplayFor(modelItem => toy.Employee.Patronymic)
+                        @Html.DisplayFor(modelItem => toy.Employee.Surname)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = toy.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = toy.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = toy.Id })
+                    </td>
+                </tr>
+            }
+    </table>
+</div>
+
+<br/>
+<div class="btn-group">
+    @Html.PageLinks(Model.PageInfo, p => Url.Action("PageIndex", new { pn = p }))
+</div>
+

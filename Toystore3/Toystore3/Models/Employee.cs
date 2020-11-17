@@ -11,5 +11,12 @@ namespace Toystore3.Models
         public string Name { set; get; }
         public string Patronymic { set; get; }
         public string Surname { set; get; }
+
+        public ICollection<Toy> Toys { get; set; }
+
+        public Employee()
+        {
+            Toys = new List<Toy>();
+        }
     }
 }

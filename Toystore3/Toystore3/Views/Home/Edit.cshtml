@@ -7,10 +7,10 @@
 <h2>Edit</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Toy</h4>
         <hr />
@@ -34,7 +34,7 @@
         <div class="form-group">
             @Html.Label("Employee", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.EmployeeId, ViewBag.Employees as SelectList, "Сотрудник (не назначен)")
+                @Html.DropDownListFor(model => model.EmployeeId, ViewBag.Employees as SelectList, "<<--Сотрудник не назначен-->>")
             </div>
         </div>
 
@@ -47,7 +47,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.Action("ReturnLink")
 </div>
 
 @section Scripts {
